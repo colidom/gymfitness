@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <header></header>
     <main>
         <?php
         while (have_posts()) : the_post();
