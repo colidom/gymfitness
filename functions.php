@@ -16,7 +16,8 @@ add_action('init', 'extremegymfitness_menu');
 
 function extremegymfitness_scripts_styles()
 {
-    wp_enqueue_style('extremegymfitness-style', get_stylesheet_uri(), array(), '1.0.0');
+    wp_enqueue_style('normalize', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css', array(), '8.0.1');
+    wp_enqueue_style('styles', get_stylesheet_uri(), array('normalize'), '1.0.0');
 }
 
 add_action('wp_enqueue_scripts', 'extremegymfitness_scripts_styles');

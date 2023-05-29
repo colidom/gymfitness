@@ -10,3 +10,15 @@
     Tags: Gym, gimnasio, flexbox, css grid, mobile first
     Text Domain: extremegymfitness
 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Staatliches&display=swap');
+
+:root {
+    /* Fonts */
+    --font-raleway: 'Raleway', sans-serif;
+    --font-staatliches: 'Staatliches', cursive;
+}
+
+
+body {
+    font-family: var(--font-raleway);
+}
