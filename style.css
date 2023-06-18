@@ -14,10 +14,94 @@
 
 :root {
     /* Fonts */
-    --font-raleway: 'Raleway', sans-serif;
-    --font-staatliches: 'Staatliches', cursive;
+    --font-main: 'Raleway', sans-serif;
+    --font-headings: 'Staatliches', cursive;
+
+    /* Colors */
+    --primary: #ff5b00;
+    --dark-grey: #2f2e2e;
+    --light-grey: #ebebeb;
+    --white: #fff;
+    --black: #000;
+}
+
+/* Snippet para evitar que los elementos crezcan si añadimos padding */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px = 1rem */
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
 body {
-    font-family: var(--font-raleway);
+    font-family: var(--font-main);
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+/* Heading */
+h1, h2, h3, h4 {
+    font-family: var(--font-headings);
+    margin: 0 0 5rem 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 4.8rem;
+}
+h3 {
+    font-size: 3.6rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+
+
+/* Globales */
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+.text-primary{
+    color: var(--primary);
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.section {
+    padding: 5rem 0;
 }
