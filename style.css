@@ -124,3 +124,16 @@ img {
         justify-content: space-between;
     }
 }
+
+.main-menu .menu {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .main-menu {
+        display: block;
+    }
+    .main-menu .menu {
+        display: flex;
+    }
+}
