@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header class="">
-        <div class="container bar-navigation">
+    <header class="header">
+        <div class="container navigation-bar">
             <div class="logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo">
             </div>
