@@ -93,6 +93,10 @@ img {
     margin: 0 auto;
 }
 
+.centred-content{
+    width: min(95%, 80rem);
+}
+
 /* Utilities */
 .text-center {
     text-align: center;
