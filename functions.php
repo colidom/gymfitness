@@ -8,6 +8,9 @@ function extremegymfitness_setup()
 {
     // Imágenes destacadas
     add_theme_support('post-thumbnails');
+
+    // Títulos para SEO
+    add_theme_support('title-tag');
 }
 
 add_action('after_setup_theme', 'extremegymfitness_setup');
