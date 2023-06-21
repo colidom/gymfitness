@@ -10,6 +10,8 @@
         );
         wp_nav_menu($args);
         ?>
+
+        <p class="copyright">&copy <?php echo get_bloginfo('name') . ' ' . date("Y"); ?></p>
     </div>
 </footer>
 
