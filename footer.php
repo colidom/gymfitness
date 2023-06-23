@@ -11,7 +11,7 @@
         wp_nav_menu($args);
         ?>
 
-        <p class="copyright">&copy <?php echo get_bloginfo('name') . ' ' . date("Y"); ?></p>
+        <p class="copyright">Copyright &copy <?php echo date("Y") . ' - ' . get_bloginfo('name'); ?></p>
     </div>
 </footer>
 
