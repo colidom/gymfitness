@@ -16,7 +16,12 @@ get_header();
             $lessons->the_post();
         ?>
             <li class="card">
-                <?php the_title() ?>
+                <?php the_post_thumbnail() ?>
+                <div class="content">
+                    <a href="<?php the_permalink() ?>">
+                        <h3><?php the_title() ?></h3>
+                    </a>
+                </div>
             </li>
         <?php }
         wp_reset_postdata(); // Para indicar a WP que finaliza la consulta
