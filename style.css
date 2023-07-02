@@ -252,6 +252,11 @@ hr {
 .card {
     background-image: linear-gradient(to bottom, transparent 0, rgb(0 0 0 / .7));
     position: relative;
+    overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.2);
 }
 
 .card img {
@@ -260,6 +265,7 @@ hr {
     z-index: -1;
     height: 40rem;
     object-fit: cover;
+    transition: transform 300ms ease;
 }
 
 .card .content {
