@@ -20,6 +20,23 @@ class Gymxtreme_Lessons_Widget extends WP_Widget
 
     public function form($instance)
     {
+        $quantity = !empty($instance['quantity']) ? $instance['quantity'] :
+            esc_html('How many lessons do you want to show?');
+        ?>
+
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id('quantity')); ?>">
+                <?php esc_attr_e('How many lessons do you want to show?'); ?>
+            </label>
+            <input class="widefat"
+                id="<?php echo esc_attr($this->get_field_id('quantity')); ?>"
+                name="<?php echo esc_attr($this->get_field_name('quantity')); ?>"
+                type="number"
+                value="<?php echo esc_attr($quantity); ?>"
+            />
+        </p>
+        <?php
+
     }
 
     public function update($new_instance, $old_instance)
