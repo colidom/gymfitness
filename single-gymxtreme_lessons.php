@@ -4,7 +4,7 @@ get_header();
 <main class="container section con-sidebar">
     <section class="main-content">
         <?php
-        get_template_part('template-parts/page');
+        get_template_part('template-parts/lesson');
         ?>
     </section>
     <aside>
