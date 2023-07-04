@@ -16,6 +16,7 @@ class Gymxtreme_Lessons_Widget extends WP_Widget
 
     public function widget($args, $instance)
     {
+        echo $instance['quantity'];
     }
 
     public function form($instance)
@@ -36,11 +37,14 @@ class Gymxtreme_Lessons_Widget extends WP_Widget
             />
         </p>
         <?php
-
     }
 
     public function update($new_instance, $old_instance)
     {
+        $instance = array();
+        $instance['quantity'] = (!empty($new_instance['quantity'])) ? 
+        sanitize_text_field($new_instance['quantity']) : '';
+        return $instance;
     }
 }
 
