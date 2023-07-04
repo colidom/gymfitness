@@ -32,3 +32,18 @@ function gymxtreme_scripts_styles()
 }
 
 add_action('wp_enqueue_scripts', 'gymxtreme_scripts_styles');
+
+// Definir zona de widgets
+function gymxtreme_widgets()
+{
+    register_sidebar(array(
+        "name"          => "Sidebar 1",
+        "id"            => "sidebar-1",
+        "before_widget" => '<div class="widget">',
+        "after_widget"  => '</div>',
+        "before_title"  => '<h3 class="text-center text-primary">',
+        "after_title"   => "</h3>"
+    ));
+}
+
+add_action('widgets_init', 'gymxtreme_widgets');
