@@ -283,3 +283,12 @@ hr {
 .card .content p {
     color: var(--white);
 }
+
+/* Sidebar */
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+    }
+}
