@@ -7,9 +7,9 @@ get_header();
         get_template_part('template-parts/lesson');
         ?>
     </section>
-    <aside>
-        <h2>Sidebar aquí</h2>
-    </aside>
+    <?php
+    get_sidebar();
+    ?>
 </main>
 <?php
 get_footer();
