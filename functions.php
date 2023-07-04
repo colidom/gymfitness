@@ -3,6 +3,8 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
+// Includes
+require get_template_directory() . '/includes/widgets.php';
 
 function gymxtreme_setup()
 {
