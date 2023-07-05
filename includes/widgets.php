@@ -30,7 +30,7 @@ class Gymxtreme_Lessons_Widget extends WP_Widget
                 ?>
                     <li>
                         <div class="image">
-                            <?php the_post_thumbnail('medium')?>
+                            <?php the_post_thumbnail('thumbnail')?>
                         </div>
                         <div class="lesson-content">
                             <a href="<?php the_permalink() ?>">
