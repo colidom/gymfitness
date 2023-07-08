@@ -1,8 +1,7 @@
 <?php
 get_header();
 ?>
-<h1>Desde index.php</h1>
-<main>
+<main class="section container">
     <?php
     while (have_posts()) : the_post();
 
