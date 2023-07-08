@@ -284,8 +284,18 @@ hr {
     margin: 0;
 }
 
-.card .content p {
+.card .content p,
+.card .content .meta a {
     color: var(--white);
+}
+
+.card .meta {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card .meta span {
+    color: var(--primary);
 }
 
 /* Sidebar */
