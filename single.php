@@ -1,1 +1,11 @@
-<h1>Desde single.php (Custom Post y Entradas de Blog)</h1>
+<?php
+get_header();
+?>
+<main class="container section">
+    <?php
+    get_template_part('template-parts/post');
+    ?>
+</main>
+<?php
+get_footer();
+?>
