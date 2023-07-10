@@ -484,3 +484,7 @@ hr {
     background-color: var(--primary);
     opacity: 1;
 }
+
+.map {
+    margin-bottom: 10rem;
+}

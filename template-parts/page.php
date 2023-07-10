@@ -8,10 +8,6 @@ while (have_posts()) : the_post();
     if (is_single()) {
     }
 
-    if (is_page('contact')) {
-        the_field('location');
-    }
-
     the_content();
 
 endwhile;

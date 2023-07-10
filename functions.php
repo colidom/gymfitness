@@ -54,3 +54,23 @@ function gymxtreme_widgets()
 }
 
 add_action('widgets_init', 'gymxtreme_widgets');
+
+// Crear Shortcodes
+function gymxtreme_location_shortcode()
+{
+?>
+    <div class="map">
+        <?php
+        if (is_page('contact')) {
+            the_field('location');
+        }
+        ?>
+    </div>
+
+    <h2 class="text-center text-primary">Contact Form</h2>
+
+<?php
+    echo do_shortcode('[contact-form-7 id="144" title="Formulario de contacto 1"]');
+}
+
+add_shortcode('gymxtreme_location', 'gymxtreme_location_shortcode');
