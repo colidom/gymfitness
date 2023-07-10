@@ -440,3 +440,47 @@ hr {
     align-items: center;
     gap: 0.5rem;
 }
+
+/* Formulario Contacto */
+.wpcf7-form label {
+    font-weight: 700;
+}
+
+.wpcf7-form .wpcf7-form-control {
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    padding: 1rem;
+}
+
+.wpcf7-form .wpcf7-submit {
+    background-color: var(--primary);
+    font-size: 2rem;
+    font-family: var(--font-headings);
+    padding: 1.2rem;
+    color: var(--white);
+}
+
+.wpcf7-form .wpcf7-submit:hover {
+    cursor: pointer;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+    background-color: rgb(200, 6, 6);
+    color: var(--white);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.wpcf7-form .ajax-loader {
+    display: block;
+    margin: 2rem auto 0 auto;
+}
+
+.wpcf7-form .wpcf7-spinner {
+    display: block;
+    margin: 2rem auto 0 auto;
+    background-color: var(--primary);
+    opacity: 1;
+}
