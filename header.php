@@ -12,7 +12,7 @@
     <header class="header">
         <div class="container navigation-bar">
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo">
+                <a href="<?php echo site_url('/');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo"></a>
             </div>
             <?php
             $args = array(
