@@ -10,14 +10,19 @@ get_header();
 
 <section class="areas">
     <div class="area">
-        <?php 
+        <?php
         $area_1 = get_field('area_1');
-        var_dump($area_1);
+        $image = $area_1['image']['sizes']['medium_large'];
+        $text = $area_1['text'];
         ?>
+        <img src="<?php echo esc_attr($image); ?>" alt="Image <?php echo esc_attr($text); ?>">
+        <p>
+            <?php echo esc_html($text); ?>
+        </p>
     </div>
 </section>
 <main class="container section">
-    
+
 </main>
 <?php
 get_footer();
