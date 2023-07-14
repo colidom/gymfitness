@@ -59,7 +59,10 @@ get_header();
 </section>
 <main class="container section">
     <h2 class="text-center text-primary">Our lessons</h2>
-    <?php gymxtreme_lessons_list(4)?>
+    <?php gymxtreme_lessons_list(4) ?>
+    <div class="button-container">
+        <a href="<?php echo  esc_url(get_permalink(get_page_by_title('Our lessons'))); ?>" class="button primary-button">See all lessons</a>
+    </div>
 </main>
 <?php
 get_footer();

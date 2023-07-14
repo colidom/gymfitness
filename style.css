@@ -106,6 +106,37 @@ hr {
     width: min(95%, 80rem);
 }
 
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Buttons */
+.button {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1rem 3rem;
+    display: block;
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.primary-button {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
 /* Utilities */
 .text-center {
     text-align: center;
