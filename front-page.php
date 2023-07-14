@@ -11,9 +11,45 @@ get_header();
 <section class="areas">
     <div class="area">
         <?php
-        $area_1 = get_field('area_1');
-        $image = $area_1['image']['sizes']['medium_large'];
-        $text = $area_1['text'];
+        $area = get_field('area_1');
+        $image = $area['image_1']['sizes']['medium_large'];
+        $text = $area['text'];
+        ?>
+        <img src="<?php echo esc_attr($image); ?>" alt="Image <?php echo esc_attr($text); ?>">
+        <p>
+            <?php echo esc_html($text); ?>
+        </p>
+    </div>
+
+    <div class="area">
+        <?php
+        $area = get_field('area_2');
+        $image = $area['image_2']['sizes']['medium_large'];
+        $text = $area['text'];
+        ?>
+        <img src="<?php echo esc_attr($image); ?>" alt="Image <?php echo esc_attr($text); ?>">
+        <p>
+            <?php echo esc_html($text); ?>
+        </p>
+    </div>
+
+    <div class="area">
+        <?php
+        $area = get_field('area_3');
+        $image = $area['image_3']['sizes']['medium_large'];
+        $text = $area['text'];
+        ?>
+        <img src="<?php echo esc_attr($image); ?>" alt="Image <?php echo esc_attr($text); ?>">
+        <p>
+            <?php echo esc_html($text); ?>
+        </p>
+    </div>
+
+    <div class="area">
+        <?php
+        $area = get_field('area_4');
+        $image = $area['image_4']['sizes']['medium_large'];
+        $text = $area['text'];
         ?>
         <img src="<?php echo esc_attr($image); ?>" alt="Image <?php echo esc_attr($text); ?>">
         <p>
