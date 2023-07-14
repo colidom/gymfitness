@@ -58,7 +58,8 @@ get_header();
     </div>
 </section>
 <main class="container section">
-
+    <h2 class="text-center text-primary">Our lessons</h2>
+    <?php gymxtreme_lessons_list(4)?>
 </main>
 <?php
 get_footer();

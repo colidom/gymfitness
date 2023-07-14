@@ -5,6 +5,7 @@ if (!defined('ABSPATH')) {
 }
 // Includes
 require get_template_directory() . '/includes/widgets.php';
+require get_template_directory() . '/includes/queries.php';
 
 function gymxtreme_setup()
 {
