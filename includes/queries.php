@@ -37,4 +37,42 @@ function gymxtreme_lessons_list($qty = -1)
 <?php
 
 }
+
+function gymxtreme_instructors()
+{
 ?>
+    <ul class="grid-list instructors">
+        <?php
+        $args = array(
+            'post_type' => 'instructors'
+        );
+
+        $instructors = new WP_Query($args);
+        while ($instructors->have_posts()) {
+            $instructors->the_post();
+        ?>
+            <li class="instructor">
+                <?php the_post_thumbnail('large'); ?>
+                <div class="content">
+                    <h3><?php the_title(); ?></h3>
+                    <?php the_content(); ?>
+
+                    <div class="speciality">
+                        <?php
+                        $spec = get_field('speciality');
+
+                        foreach ($spec as $s) { ?>
+                            <span class="label">
+                                <?php echo esc_html($s); ?>
+                            </span>
+                        <?php } ?>
+
+                    </div>
+                </div>
+            </li>
+        <?php }
+        wp_reset_postdata(); // Para indicar a WP que finaliza la consulta
+        ?>
+    </ul>
+<?php
+}

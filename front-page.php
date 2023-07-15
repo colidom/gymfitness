@@ -64,6 +64,13 @@ get_header();
         <a href="<?php echo  esc_url(get_permalink(get_page_by_title('Our lessons'))); ?>" class="button primary-button">See all lessons</a>
     </div>
 </main>
+
+<section class="container section">
+    <h2 class="text-center text-primary">Our Instructors</h2>
+    <p class="text-center">Professional instructors to help you achieve your goals</p>
+
+    <?php gymxtreme_instructors(); ?>
+</section>
 <?php
 get_footer();
 ?>
