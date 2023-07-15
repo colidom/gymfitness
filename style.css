@@ -591,3 +591,38 @@ hr {
         opacity: 1;
     }
 }
+
+/* Instructors */
+.instructor {
+    margin: 2rem 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.instructor img {
+    height: 40rem;
+    object-fit: cover;
+}
+
+.instructor .content {
+    padding: 3rem;
+}
+
+.instructor h3 {
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+.instructor .label {
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--font-headings);
+    margin-right: 2rem;
+    font-size: 2.2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+
+.instructor .label:last-of-type {
+    margin-right: 0;
+}
