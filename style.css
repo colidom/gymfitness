@@ -598,6 +598,16 @@ hr {
     border-bottom: 1px solid var(--light-grey);
 }
 
+.instructor:last-of-type {
+    border: none;
+}
+
+@media (min-width: 993px) {
+    .instructor {
+        position: relative;
+    }
+}
+
 .instructor img {
     height: 40rem;
     object-fit: cover;
@@ -607,9 +617,38 @@ hr {
     padding: 3rem;
 }
 
+@media (min-width: 993px) {
+    .instructor .content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0 0 0 / 0.75);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white);
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+        transition-delay: 0.2s;
+    }
+
+    .instructor .content h3 {
+        color: var(--white);
+    }
+
+    .instructor:hover .content {
+        opacity: 1;
+    }
+}
+
 .instructor h3 {
     margin-bottom: 2rem;
     color: var(--black);
+}
+
+.speciality {
+    margin-top: 1rem;
 }
 
 .instructor .label {

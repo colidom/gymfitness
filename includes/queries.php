@@ -53,7 +53,7 @@ function gymxtreme_instructors()
         ?>
             <li class="instructor">
                 <?php the_post_thumbnail('large'); ?>
-                <div class="content">
+                <div class="content text-center">
                     <h3><?php the_title(); ?></h3>
                     <?php the_content(); ?>
 
