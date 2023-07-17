@@ -75,7 +75,7 @@ get_header();
 <section class="testimonials">
     <h2 class="text-center text-white">Testimonials</h2>
 
-    <div class="testimonials-container">
+    <div class="testimonials-container swiper">
         <?php gymxtreme_testimonials(); ?>
     </div>
 </section>
