@@ -76,3 +76,35 @@ function gymxtreme_instructors()
     </ul>
 <?php
 }
+
+function gymxtreme_testimonials()
+{
+?>
+    <ul class="testimonials-list">
+        <?php
+        $args = array(
+            'post_type' => 'testimonials'
+        );
+
+        $testimonials = new WP_Query($args);
+        while ($testimonials->have_posts()) {
+            $testimonials->the_post();
+        ?>
+            <li class="testimonial text-center">
+                <blockquote>
+                    <?php the_content(); ?>
+                </blockquote>
+
+                <footer class="testimonial-footer">
+                    <?php the_post_thumbnail('thumbnail') ?>
+                    <p>
+                        <?php the_title(); ?>
+                    </p>
+                </footer>
+            </li>
+        <?php }
+        wp_reset_postdata(); // Para indicar a WP que finaliza la consulta
+        ?>
+    </ul>
+<?php
+}
