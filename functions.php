@@ -34,9 +34,12 @@ function gymxtreme_scripts_styles()
     wp_enqueue_style('normalize', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css', array(), '8.0.1');
     wp_enqueue_style('styles', get_stylesheet_uri(), array('normalize'), '1.0.0');
     wp_enqueue_style('lightboxcss', get_template_directory_uri() . '/css/lightbox.min.css', array(), '2.11.4');
+    wp_enqueue_style('swippercss', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), '10.0.4');
 
     // JS Files
     wp_enqueue_script('lightboxjs', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '2.11.4',  true);
+    wp_enqueue_script('swipperjs', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array(), '10.0.4',  true);
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'gymxtreme_scripts_styles');
