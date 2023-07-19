@@ -155,6 +155,38 @@ hr {
 }
 
 /* Header */
+body.home .header {
+    padding-top: 2rem;
+    height: auto;
+    min-height: 70rem;
+}
+
+@media (min-width: 768px) {
+    body.home .header {
+        height: 100vh;
+        max-height: 90vh;
+    }
+}
+
+.tagline {
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+.tagline h1 {
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .tagline {
+        margin-top: 15rem;
+    }
+}
+
+.tagline p {
+    font-size: 2rem;
+}
+
 .header {
     background-color: var(--dark-grey);
     padding: 2rem 0;

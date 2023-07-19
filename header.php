@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('home'); ?>>
     <header class="header">
         <div class="container navigation-bar">
             <div class="logo">
@@ -24,12 +24,12 @@
             ?>
         </div>
         <?php if (is_front_page()) { ?>
-            <div class="tagline text-center">
+            <div class="tagline text-center container">
                 <h1>
-                    <?php the_field('hero_heading') ?>
+                    <?php the_field('hero_heading'); ?>
                 </h1>
                 <p>
-                    <?php the_field('hero_text') ?>
+                    <?php the_field('hero_text'); ?>
                 </p>
             </div>
         <?php } ?>

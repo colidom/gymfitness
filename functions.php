@@ -86,10 +86,23 @@ function gymxtreme_hero_image()
     $front_id = get_option('page_on_front');
 
     // Get the image
-    $image_id = get_option('hero_image', $front_id);
+    $image_id = get_field('hero_image', $front_id);
 
     // Get image path
-    $image = wp_get_attachment_image_src($image_id, 'full'[0]);
+    $image = wp_get_attachment_image_src($image_id, 'full')[0];
 
+    // CSS Code
+    wp_register_style('custom', false);
+    wp_enqueue_style('custom');
+
+    $featured_image_css = "
+        body.home .header{
+            background-image: linear-gradient(rgb( 0 0 0 / .75),rgb( 0 0 0 / .75) ), url($image);
+        }
+    ";
+
+    // Inject CSS
+    wp_add_inline_style('custom', $featured_image_css);
 }
-add_shortcode('init', 'gymxtreme_hero_image');
+
+add_action('init', 'gymxtreme_hero_image');
