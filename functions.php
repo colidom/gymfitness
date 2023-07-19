@@ -78,3 +78,18 @@ function gymxtreme_location_shortcode()
 }
 
 add_shortcode('gymxtreme_location', 'gymxtreme_location_shortcode');
+
+/* Dynamic images as BG */
+function gymxtreme_hero_image()
+{
+    // Get page ID
+    $front_id = get_option('page_on_front');
+
+    // Get the image
+    $image_id = get_option('hero_image', $front_id);
+
+    // Get image path
+    $image = wp_get_attachment_image_src($image_id, 'full'[0]);
+
+}
+add_shortcode('init', 'gymxtreme_hero_image');
