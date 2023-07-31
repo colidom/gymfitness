@@ -34,6 +34,12 @@ function gymXtremeWordpress() {
                 delay: 1000,
             });
     }
+
+    const hamburger = document.querySelector(".hamburger-menu svg");
+    hamburger.addEventListener("click", function () {
+        const mainMenu = document.querySelector(".menu-container");
+        mainMenu.classList.toggle("show");
+    });
 }
 
 document.addEventListener("DOMContentLoaded", gymXtremeWordpress);
