@@ -37,3 +37,14 @@ function gymXtremeWordpress() {
 }
 
 document.addEventListener("DOMContentLoaded", gymXtremeWordpress);
+
+window.onscroll = function () {
+    const scroll = window.scrollY;
+    const navBar = document.querySelector(".navigation-bar");
+
+    if (scroll > 300) {
+        navBar.classList.add("fixed-top");
+    } else {
+        navBar.classList.remove("fixed-top");
+    }
+};

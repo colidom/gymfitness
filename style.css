@@ -175,6 +175,24 @@ body.home .header {
     margin-top: 5rem;
 }
 
+@media (min-width: 992px) {
+    .fixed-top {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--dark-grey);
+        padding: 1rem 5rem;
+        height: 10rem;
+        z-index: 1000;
+        transition: background-color 300ms ease-in-out;
+    }
+
+    .fixed-top .logo {
+        width: 15rem;
+    }
+}
+
 .tagline h1 {
     color: var(--white);
 }
