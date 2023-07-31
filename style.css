@@ -112,23 +112,27 @@ hr {
 }
 
 /* Buttons */
+.form-submit .submit,
 .button {
     background-color: var(--white);
     color: var(--black);
     padding: 1rem 3rem;
     display: block;
     flex: 1;
+    width: 100%;
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 0.5rem;
     margin: 1rem 0;
+    border: none;
 }
 
 @media (min-width: 768px) {
     .button {
         display: inline-block;
         flex: 0 0 auto;
+        width: auto;
     }
 }
 
@@ -822,4 +826,67 @@ body.home .header {
 .ml2 .letter {
     display: inline-block;
     line-height: 1em;
+}
+
+/* Comments */
+.comments {
+    width: min(95%, 60rem);
+    margin: 5rem auto 0 auto;
+}
+
+.comment-reply-title {
+    color: var(--primary);
+    text-align: center;
+}
+
+.logged-in-as a {
+    color: var(--primary);
+}
+
+.comment-form-comment label {
+    font-weight: 700;
+    margin: 2rem 0;
+    display: block;
+}
+
+.form-submit .submit {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.comment-form-comment textarea,
+.comments input[type="text"] {
+    border: 1px solid var(--light-grey);
+    width: 100%;
+    padding: 1rem;
+}
+
+.comments input[type="text"] {
+    margin: 0.5rem 0;
+}
+
+h3.comments {
+    margin-top: 5rem 0;
+}
+
+.comments-list .comment {
+    background-color: var(--light-grey);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.comments-list a {
+    color: var(--primary);
+}
+
+.comments-list cite {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.comments-list .children .comment {
+    background-color: var(--white);
+    margin: 2rem 0;
 }
