@@ -559,6 +559,11 @@ body.home .header {
     gap: 0.5rem;
 }
 
+.meta-info .post-categories {
+    display: flex;
+    gap: 1rem;
+}
+
 /* Formulario Contacto */
 .wpcf7-form label {
     font-weight: 700;
