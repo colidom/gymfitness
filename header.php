@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('home'); ?>>
+<body <?php body_class(); ?>>
     <header class="header">
         <div class="container navigation-bar">
             <div class="logo">
